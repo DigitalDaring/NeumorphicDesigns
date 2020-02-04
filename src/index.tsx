@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import * as radium_web_component from 'radium_web_component';
+const enable = radium_web_component;
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

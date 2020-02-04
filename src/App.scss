@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: Lato;
 }
 
 .App-logo {
@@ -14,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #fbede9;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +36,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+radium-component {
+  transform: rotate(180deg);
+  --radium-text-color: transparent;
+  --radium-primary-color: #97dbf5;
+  --radium-center-color: #fbede9;
+  --radium-background-color:#fbede9;
+  --radium-center-shadow-color-a: #fffef970;
+  --radium-center-shadow-color-b: #e9dcd970;
+  --radium-outer-shadow-color-b: #fffef970;
+  --radium-outer-shadow-color-a: #e9dcd970;
+  --radium-center-border-color: #FFF;
 }

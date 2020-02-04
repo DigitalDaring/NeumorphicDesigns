@@ -1,23 +1,29 @@
-import React from 'react';
+import React, {useRef, useState} from 'react';
 import logo from './logo.svg';
-import './App.css';
+import RadiumComponent from './components/radium';
+import './App.scss';
+import NeumorphCard from './components/neumorph-card/neumorph-card';
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+        "radium-component": any
+    }
+  }
+}
+
+const random = Math.floor(Math.random() * 101);
 
 const App = () => {
+  
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <NeumorphCard>
+          <h2>Current Output</h2>
+          <RadiumComponent percent={random}></RadiumComponent>
+        </NeumorphCard>
+      
       </header>
     </div>
   );
