@@ -1,8 +1,6 @@
 import React, {useRef, useState} from 'react';
-import logo from './logo.svg';
-import RadiumComponent from './components/radium';
 import './App.scss';
-import NeumorphCard from './components/neumorph-card/neumorph-card';
+import OutputMonitor from './components/output-monitor/output-monitor';
 
 declare global {
   namespace JSX {
@@ -12,18 +10,11 @@ declare global {
   }
 }
 
-const random = Math.floor(Math.random() * 101);
-
 const App = () => {
-  
   return (
     <div className="App">
       <header className="App-header">
-        <NeumorphCard>
-          <h2>Current Output</h2>
-          <RadiumComponent percent={random}></RadiumComponent>
-        </NeumorphCard>
-      
+        <OutputMonitor></OutputMonitor>
       </header>
     </div>
   );

@@ -40,6 +40,8 @@
 
 radium-component {
   transform: rotate(180deg);
+  --radium-inset-left-override: 13.5px;
+  --radium-inset-top-override: 13.5px;
   --radium-text-color: transparent;
   --radium-primary-color: #97dbf5;
   --radium-center-color: #fbede9;
