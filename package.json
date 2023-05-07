@@ -22,7 +22,7 @@
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "typescript": "^3.7.5",
-    "vendor-copy": "^2.0.0",
+    "vendor-copy": "^2.0.1",
     "web-component-essentials": "0.0.4"
   },
   "scripts": {
